@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <!-- Our CSS -->
+      <link rel="stylesheet" href="main.css">
+
+
+      <!-- Google Fonts Goes Here -->
+      <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Sarabun" rel="stylesheet">
+
+
+      <!-- Mapbox GL CSS -->
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.50.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<section id="myth">
+  <div class="container-fluid">
+    <div class="row">
+
+
+      <div class="col-md-12 pad myth-color">
+          <p>Bears vs. Sasquatch</p></div></div></div>
+          <div class="container-fluid">
+            <div class="row bearmap-row">
+          <div class="col-md-5 "><img id="bearSquatch" src="images/ohio-full-map.png" class="img-fluid"></div>
+</div></div>
+<div class="container-fluid">
+<div class="row bearmap-row">
+  <div class="col mx-auto bearmap-col">
+<button id="bear-map" onclick="document.getElementById('bearSquatch').src='images/ohio-bear-map.png'">Black Bear Sitings</button>
+<button id="squatch-map" onclick="document.getElementById('bearSquatch').src='images/ohio-squatch-map.png'">Sasquatch Sitings</button>
+<button id="both-map" onclick="document.getElementById('bearSquatch').src='images/ohio-full-map.png'">Both</button>
+</div>
+</div></div></section>
+
+<!---js--->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var buttons = document.getElementById("bear-map");
+    buttons.innerHTML = '<img src="images/map-bear.png" / class="bearmapbutton">';
+</script>
+<script type="text/javascript">
+    var buttons = document.getElementById("squatch-map");
+    buttons.innerHTML = '<img src="images/map-squatch.png" / class="bearmapbutton">';
+</script>
+<script type="text/javascript">
+    var buttons = document.getElementById("both-map");
+    buttons.innerHTML = '<img src="images/map-both.png" / class="bearmapbutton">';
+</script>
+
+</html>

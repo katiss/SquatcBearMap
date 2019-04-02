@@ -1,0 +1,38 @@
+#bear-map, #squatch-map, #both-map {
+  background-color: #cf9747;
+  color: none;
+    border: none;
+    padding: 15px 32px;
+    display: inline-block;
+}
+
+.bearmap-row {
+  display: flex; /* equal height of the children */
+}
+
+.bearmap-col {
+  flex: 1; /* additionally, equal width */
+
+  padding: 1em;
+  border: none;
+}
+
+.bearmapbutton
+{
+  background: none;
+  height: 100px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  img.bearmapbutton {
+    height: 100px;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  img.bearmapbutton {
+    height: 30px;
+  }
+}
